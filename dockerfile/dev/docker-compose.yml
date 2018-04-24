@@ -1,0 +1,9 @@
+version: '2'
+services:
+  apache_with_php:
+    build: .
+    #Comparte la carpeta src con el contenedor
+    volumes:
+      - ./src:/var/www/html/
+    ports:
+      - "80:80"

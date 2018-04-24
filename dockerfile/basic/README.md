@@ -9,3 +9,6 @@ $ docker image history imagen_php:v1
 #### Creamos el contenedor
 $ docker run -it --rm imagen_php:v1
 
+
+#### Expose
+$ docker run -it --rm -p 8080:80 imagen_php:expose
